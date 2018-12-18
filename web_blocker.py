@@ -1,7 +1,7 @@
 import time
 from datetime import datetime as dt
 
-host_temp= "hosts" #this is the testing path, we copied the hosts path from root/C to here to test the script.
+host_temp= "hosts-linux" #this is the testing path, we copied the hosts path from root/C to here to test the script.
 host_path = "/etc/hosts" #for windows the host_path is "C:\\Windows\\System32\\drivers\\etc\\hosts"
 redirect = "127.0.0.1"
 """example of webpages you want to block"""
