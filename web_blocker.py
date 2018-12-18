@@ -1,8 +1,8 @@
 import time
 from datetime import datetime as dt
 
-host_temp= "hosts" """the testing location of hosts for windows, for testing the script"""
-host_path = "C:\\Windows\\System32\\drivers\\etc\\hosts"  """the real location path of hosts for windows"""
+host_temp= "hosts" #this is the testing path, we copied the hosts path from root/C to here to test the script.
+host_path = "/etc/hosts" #for windows the host_path is "C:\\Windows\\System32\\drivers\\etc\\hosts"
 redirect = "127.0.0.1"
 """example of webpages you want to block"""
 web_list=["www.facebook.com","facebook.com","Yahoo.com","123movieshub.com","https://123movieshub.com/"]
@@ -10,8 +10,8 @@ web_list=["www.facebook.com","facebook.com","Yahoo.com","123movieshub.com","http
 
 
 while True:
-    if dt(dt.now().year, dt.now().month, dt.now().day,18) < dt.now() < dt(dt.now().year,
-    dt.now().month, dt.now().day,21,49):      """The time of blocking websites, my example from 18:21, can be changed to whatever time you want """
+    if dt(dt.now().year, dt.now().month, dt.now().day,19) < dt.now() < dt(dt.now().year,
+    dt.now().month, dt.now().day,21,49):       #19 and 21,49 specify the time from when to when you want to block the pages
         print("websites cannot be launched")
 
         with open(host_path, 'r+') as file:    #working hours
@@ -32,3 +32,4 @@ while True:
             file.truncate()
         print("websites free to be launched")
     time.sleep(4)
+    #note you should execute the script as root/admin
