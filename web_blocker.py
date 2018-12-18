@@ -5,7 +5,7 @@ host_temp= "hosts-linux" #this is the testing path, we copied the hosts path fro
 host_path = "/etc/hosts" #for windows the host_path is "C:\\Windows\\System32\\drivers\\etc\\hosts"
 redirect = "127.0.0.1"
 """example of webpages you want to block"""
-web_list=["www.facebook.com","facebook.com","Yahoo.com","123movieshub.com","https://123movieshub.com/"]
+web_list=["www.youtube.com","facebook.com","Yahoo.com","123movieshub.com","https://123movieshub.com/"]
 
 
 
