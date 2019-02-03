@@ -31,5 +31,5 @@ while True:
                     file.write(line)
             file.truncate()
         print("websites free to be launched")
-    time.sleep(4)
-    #note you should execute the script as root/admin
+    time.sleep(4) 
+    #note you must execute the script as root/admin in order to work"
